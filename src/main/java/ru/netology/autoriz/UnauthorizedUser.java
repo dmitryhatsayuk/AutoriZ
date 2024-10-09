@@ -1,4 +1,7 @@
 package ru.netology.autoriz;
 
-public class UnauthorizedUser {
+public class UnauthorizedUser extends RuntimeException {
+    public UnauthorizedUser(String msg) {
+        super(msg);
+    }
 }

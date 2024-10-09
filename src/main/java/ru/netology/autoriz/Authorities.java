@@ -1,4 +1,5 @@
 package ru.netology.autoriz;
 
-public class Authorities {
+public enum Authorities {
+    READ, WRITE, DELETE
 }
