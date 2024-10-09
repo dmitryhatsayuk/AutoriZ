@@ -1,5 +1,6 @@
 package ru.netology.autoriz;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -12,8 +13,8 @@ public class UserRepository {
 
     public List<Authorities> getUserAuthorities(String user, String password) {
         //это было для проверок
-        //users.put("dim","4324");
-        //authorities.put("dim", new ArrayList<>());
+        users.put("dim","4324");
+        authorities.put("dim", new ArrayList<>());
         if (users.get(user).equals(password)) {
             return authorities.get(user);
         } else return Collections.emptyList();

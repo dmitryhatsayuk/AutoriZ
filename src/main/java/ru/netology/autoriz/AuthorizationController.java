@@ -13,7 +13,7 @@ import java.util.List;
 public class AuthorizationController {
     AuthorizationService service = new AuthorizationService();
 
-    @GetMapping("/autoriz")
+    @GetMapping("/authorize")
     public List<Authorities> getAuthorities(@RequestParam("user") String user, @RequestParam("password") String password) {
         return service.getAuthorities(user, password);
     }
